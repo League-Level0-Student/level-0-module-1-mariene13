@@ -14,19 +14,29 @@ public class TheRiddler {
 		// 1. Make a variable to hold the score
             int score= 0;
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
-            JOptionPane.showMessageDialog(null, "There was a plane crash in which every single person was killed. Yet there were 12 survivors. How?");
+          String answer= JOptionPane.showInputDialog(null, "There was a plane crash in which every single person was killed. Yet there were 12 survivors. How?");
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
-     String 
+             if(answer.equals("Those 12 people were in a relationship")){
+            	 
+             }
+             else { 
+             
+             }
 		// 5. Otherwise, say "wrong" and tell them the answer
-
+              
 		// 6. Add some more riddles
 
 		// 2. Make a pop up to show the score.
-		JOptionPane.showMessageDialog(null,"your score is + score");
+		JOptionPane.showMessageDialog(null,"your score"+score);
 	}
 
 	
 		
-	}
+		
+
+
+	
+		
+	
 
 
