@@ -17,19 +17,26 @@ public class TheRiddler {
           String answer= JOptionPane.showInputDialog(null, "There was a plane crash in which every single person was killed. Yet there were 12 survivors. How?");
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
              if(answer.equals("Those 12 people were in a relationship")){
-            	 
+             JOptionPane.showMessageDialog(null, "correct!!"); 
+             score++;
              }
-             else { 
+             else { JOptionPane.showMessageDialog(null, "wrong");
              
              }
 		// 5. Otherwise, say "wrong" and tell them the answer
               
 		// 6. Add some more riddles
-
+           String solution = JOptionPane.showInputDialog("2+2");
+           if(solution.equals("4")) {
+        	   JOptionPane.showMessageDialog(null, "correct!!"); 
+               score++;
+           }
+               else { JOptionPane.showMessageDialog(null, "wrong");
+           }
 		// 2. Make a pop up to show the score.
 		JOptionPane.showMessageDialog(null,"your score"+score);
 	}
-
+}
 	
 		
 		
